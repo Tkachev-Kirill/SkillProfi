@@ -90,19 +90,25 @@ namespace SkillProfiWebSite.Models
             }
         }
 
-        public static async Task<string> GetImage(string nameFile)
+        public static async Task GetImage(string nameFile)
         {
             using (HttpClient client = new HttpClient())
             {
                 var response = await client.GetAsync($"https://localhost:7276/api/GetImage/{nameFile}");
                 var stream = await response.Content.ReadAsStreamAsync();
-                var fileName = nameFile;
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", fileName);
+                var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images");
+
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                var filePath = Path.Combine(directoryPath, nameFile);
+
                 using (var fileStream = File.Create(filePath))
                 {
                     await stream.CopyToAsync(fileStream);
                 }
-                return fileName;
             }
         }
 

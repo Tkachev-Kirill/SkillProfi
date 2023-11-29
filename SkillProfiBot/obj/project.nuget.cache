@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H68ovSlzoygiYNUSq/LRA0fqYLIFV8Hyo4F+S3MkLcLaagZln1Rki65WLMgdbF/uLpuVIslG6A3XWvyth+lwHQ==",
+  "dgSpecHash": "Jgpe9a0Qj+WHxu/REkre9RsRoWh4142mPYe9/UONTBsRpigEXGN/3I7ABEmsZ3NkWL/U5YDl2Dli72gHZ3lB1A==",
   "success": true,
-  "projectFilePath": "/Users/black__ssss/Skillbox/SkillProfiBot/SkillProfiBot.csproj",
+  "projectFilePath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiBot\\SkillProfiBot.csproj",
   "expectedPackageFiles": [
-    "/Users/black__ssss/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/Users/black__ssss/.nuget/packages/telegram.bot/19.0.0/telegram.bot.19.0.0.nupkg.sha512"
+    "C:\\Users\\black__ssss\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\black__ssss\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
   ],
   "logs": []
 }

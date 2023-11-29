@@ -45,10 +45,14 @@ namespace SkillProfiBot
 
             var id = TelegramMessage.Chat.Id;
             var workerWithFile = new WorkWithFile(id);
+
+            await workerWithFile.CheckAndCreateData();
+
             if (TelegramMessage.Text.ToLower() == "/start")
             {
                 await Hello(); 
                 await workerWithFile.SetPosition(0, false);
+                return;
             }
 
             int position = await workerWithFile.GetPosition();
@@ -59,9 +63,13 @@ namespace SkillProfiBot
                 {
                     position = -2;
                 }
+                else if (position == 1)
+                {
+                    position = -2;
+                }
                 else
                 {
-                    position = position - 2;
+                    position = position -2;
                 }
             }
 
@@ -108,8 +116,8 @@ namespace SkillProfiBot
                 case 3:
                     var dataFromFile = await workerWithFile.GetData();
                     dataFromFile.Text = TelegramMessage.Text;
+
                     await CreateNewRequest(dataFromFile);
-                    await Bot.SendTextMessageAsync(TelegramMessage.Chat, "Успешно!");//Метод
                     await Hello();
                     await workerWithFile.SetPosition(0, false);
                     break;
@@ -131,11 +139,21 @@ namespace SkillProfiBot
             };
             var json = JsonConvert.SerializeObject(request);
             Console.WriteLine(json);
-            using (HttpClient client = new HttpClient())
+            try
             {
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-                var resp = await client.PostAsync("https://localhost:7276/api/CreateNewRequest", content);
+                using (HttpClient client = new HttpClient())
+                {
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    var resp = await client.PostAsync("https://localhost:7276/api/CreateNewRequest", content);
+                }
+                await Bot.SendTextMessageAsync(TelegramMessage.Chat, "Успешно!");
             }
+            catch (Exception ex)
+            {
+                await Bot.SendTextMessageAsync(TelegramMessage.Chat, "Что то пошло не так!");
+                Console.WriteLine($"Ошибка {ex}");
+            }
+           
         }
 
         private async Task<bool> IsValidEmail(string email)

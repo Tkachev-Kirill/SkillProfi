@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj": {}
+    "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj": {}
   },
   "projects": {
-    "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj": {
+    "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj",
+        "projectUniqueName": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj",
         "projectName": "SkillProfiClasses",
-        "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj",
+        "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj",
         "packagesPath": "C:\\Users\\black__ssss\\.nuget\\packages\\",
-        "outputPath": "C:\\SkillBoxHomeWork\\SkillProfiClasses\\obj\\",
+        "outputPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\black__ssss\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj": {
+    "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
         "projectName": "SkillProfiDesktopAdmin",
-        "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
+        "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
         "packagesPath": "C:\\Users\\black__ssss\\.nuget\\packages\\",
-        "outputPath": "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\obj\\",
+        "outputPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\black__ssss\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,11 +83,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj": {
-                "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj"
+              "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj": {
+                "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj"
               },
-              "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\SkillProfiWebApi.csproj": {
-                "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\SkillProfiWebApi.csproj"
+              "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\SkillProfiWebApi.csproj": {
+                "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\SkillProfiWebApi.csproj"
               }
             }
           }
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\SkillProfiWebApi.csproj": {
+    "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\SkillProfiWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\SkillProfiWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\SkillProfiWebApi.csproj",
         "projectName": "SkillProfiWebApi",
-        "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\SkillProfiWebApi.csproj",
+        "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\SkillProfiWebApi.csproj",
         "packagesPath": "C:\\Users\\black__ssss\\.nuget\\packages\\",
-        "outputPath": "C:\\SkillBoxHomeWork\\SkillProfiWebApi\\obj\\",
+        "outputPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\black__ssss\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,8 +149,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj": {
-                "projectPath": "C:\\SkillBoxHomeWork\\SkillProfiClasses\\SkillProfiClasses.csproj"
+              "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj": {
+                "projectPath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiClasses\\SkillProfiClasses.csproj"
               }
             }
           }

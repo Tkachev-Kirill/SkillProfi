@@ -12,7 +12,7 @@ using SkillProfiWebApi.WorkerWithDb.Context;
 namespace SkillProfiWebApi.Migrations
 {
     [DbContext(typeof(ModelContext))]
-    [Migration("20231129095344_InitialCreate")]
+    [Migration("20231129101931_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

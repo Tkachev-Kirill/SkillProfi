@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "078tdQUt4tB2LJ1frKWUgqybO5vCZmCkSSpbu2n8yuvn7bPYfRzsOP09e68hP6ms4jV9VOJjx6yirCerSjMUPg==",
+  "dgSpecHash": "L3tuHoAXVYvfWPBRyVu3Uoeo7Qv+uRVxQaXpVgwYneHfgiZ0hv6bTNaSigAyLK3whO/NAlqVU+bDMNWkRc5/tA==",
   "success": true,
-  "projectFilePath": "C:\\SkillBoxHomeWork\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
+  "projectFilePath": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiDesktopAdmin\\SkillProfiDesktopAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\black__ssss\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\black__ssss\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -22,31 +22,7 @@ namespace SkillProfiBot
 
         public async Task<int> GetPosition()
         {
-            if (!Directory.Exists(NameFolder))
-            {
-                Directory.CreateDirectory(NameFolder);
-                File.Create(FilePath).Close();
-                await SetPosition(0, false);
-                Console.WriteLine("Папка создана c файлом создана");
-                return 0;
-            }
-
-            if (!File.Exists(FilePath))
-            {
-                File.Create(FilePath).Close();
-                await SetPosition(0, false);
-                Console.WriteLine("Файл создан.");
-                return 0;
-            }
-
             string json = File.ReadAllText(FilePath).Trim();
-            Console.WriteLine("Содержимое файла: " + json);
-            if (string.IsNullOrEmpty(json))
-            {
-                await SetPosition(0, false);
-                return 0;
-            }
-
             DataInFile data = JsonConvert.DeserializeObject<DataInFile>(json);
 
             if (data.Date.AddDays(1) < DateTime.Now)
@@ -56,6 +32,34 @@ namespace SkillProfiBot
             }
 
             return Convert.ToInt32(data.Position);
+        }
+
+        public async Task CheckAndCreateData()
+        {
+            if (!Directory.Exists(NameFolder))
+            {
+                Directory.CreateDirectory(NameFolder);
+                File.Create(FilePath).Close();
+                await SetPosition(0, false);
+                Console.WriteLine("Папка создана c файлом создана");
+                return;
+            }
+
+            if (!File.Exists(FilePath))
+            {
+                File.Create(FilePath).Close();
+                await SetPosition(0, false);
+                Console.WriteLine("Файл создан.");
+                return;
+            }
+
+            string json = File.ReadAllText(FilePath).Trim();
+            Console.WriteLine("Содержимое файла: " + json);
+            if (string.IsNullOrEmpty(json))
+            {
+                await SetPosition(0, false);
+                return;
+            }
         }
 
         public async Task SetPosition(int needPosition, bool needSaveOldData)

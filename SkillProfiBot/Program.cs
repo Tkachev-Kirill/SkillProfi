@@ -11,7 +11,7 @@ namespace SkillProfiBot
     {
         static async Task Main(string[] args)
         {
-            var token = "6802768084:AAF9obJT9AUYAubhcAomwUUBvn5ir5hQdhg";
+            var token = "6976106897:AAH--qwpG9Z9WlO8N0HTCwtolUSRyxLF3iE";
             var bot = new TelegramBotClient(token: token);
 
             using var cts = new CancellationTokenSource();
