@@ -1,0 +1,92 @@
+﻿<Window x:Class="SkillProfiDesktopAdmin.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkillProfiDesktopAdmin"
+        mc:Ignorable="d"
+      Title="PhoneBook" Height="450" Width="800">
+    <Grid x:Name="allGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+            <RowDefinition Height="45*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+            <ColumnDefinition Width="180*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Button  
+                Content="Рабочий стол" Height="36" Click="Button_ClickDesktop" VerticalAlignment="Top"  
+                Grid.Column= "0" 
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+            />
+
+
+        <Button  
+                Content="Главная"  Click="Button_ClickMain" Height="36" VerticalAlignment="Top" 
+                Grid.Column= "0" 
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+            />
+
+        <Button  
+                Content="Проект" Click="Button_ClickProject" Height="36" VerticalAlignment="Top" 
+                Grid.Column= "0" 
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+            />
+
+        <Button  
+                Content="Услуги" Click="Button_ClickService" Height="36" VerticalAlignment="Top" 
+             Grid.Column= "0" 
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+            />
+
+        <Button  
+                Content="Блог" Click="Button_Blog" Height="36" VerticalAlignment="Top" 
+              Grid.Column= "0" 
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+            />
+
+        <Button  
+                Content="Контакты" Click="Button_Contact" Height="36" VerticalAlignment="Top" 
+              Grid.Column= "0" 
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+            />
+
+    </Grid>
+</Window>

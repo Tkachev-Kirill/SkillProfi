@@ -1,0 +1,67 @@
+﻿@using SkillProfiClasses.Pages.ProjectPage;
+@{
+    ViewData["Title"] = "Проекты";
+}
+
+@model List<ProjectPage>
+
+<div class="content">
+    <h1>Проекты</h1>
+
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("ConcreteData", "Project", new { id = item.ProjectId })" class="edit-post highlight">
+            <div class="item">
+                <img src="~/Images/@item.PathToImage" alt="картинка" class="image-size">
+                <p>@item.Name</p>
+            </div>
+        </a>
+    }
+</div>
+
+<style>
+   
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+
+        .item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            color: #ff6600;
+        }
+
+    .image-size {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .edit-post {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .highlight {
+        color: #ddd;
+    }
+</style>

@@ -1,0 +1,108 @@
+﻿@using SkillProfiClasses.Pages.MainPage;
+@{
+    ViewData["Title"] = "Создание заявки";
+}
+
+@model MainPageViewModel
+
+    <div class="content">
+
+        <h2>@Model.DataMainPage.NameBaner</h2>
+        <p>@Model.DataMainPage.TextInBaner</p>
+        <p>@Model.DataMainPage.TextUnderBaner</p>
+
+        <div class="form-container">
+        <form method="post">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" value="@Model.DataRequest.Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="@Model.DataRequest.Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Text">Текст сообщения:</label>
+                <textarea id="Text" name="Text" rows="4" value="@Model.DataRequest.Text" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        <div id="success-banner" class="banner-container" style="display: none;">
+            <div class="banner">
+                <p>Успешно!</p>
+                <button onclick="closeBanner()">OK</button>
+            </div>
+        </div>
+
+        <div id="error-banner" class="banner-container" style="display: none;">
+            <div class="banner">
+                <p>Ошибка!</p>
+                <button onclick="closeBanner()">OK</button>
+            </div>
+        </div>
+        </div>
+
+    @if (Model.Success.HasValue)
+    {
+        @if (Model.Success.Value)
+        {
+            <script>
+                document.getElementById('success-banner').style.display = 'block';
+            </script>
+        }
+        else
+        {
+            <script>
+                document.getElementById('error-banner').style.display = 'block';
+            </script>
+        }
+    }
+    </div>
+
+<script>
+    function closeBanner() {
+        document.getElementById('success-banner').style.display = 'none';
+        document.getElementById('error-banner').style.display = 'none';
+    }
+</script>
+
+<style>
+    h2 {
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .banner-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .form-container {
+        margin-bottom: 10px;
+    }
+</style>
+
+

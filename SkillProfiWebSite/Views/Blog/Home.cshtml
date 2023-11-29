@@ -1,0 +1,72 @@
+﻿@using SkillProfiClasses.Pages.BlogPage;
+@{
+    ViewData["Title"] = "Блог";
+}
+
+@model List<BlogPage>
+
+
+
+<div class="content">
+    <h1>Записи блога</h1>
+
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("ConcreteData", "Blog", new { id = item.BlogId })" class="edit-post highlight">
+            <div class="item">
+                <p>@item.Date.ToString("dd.MM.yyyy")</p>
+                <img src="~/Images/@item.PathToImage" alt="картинка" class="image-size">
+                <p>@item.Name</p>
+                <p>@item.Description</p>
+            </div>
+        </a>
+    }
+</div>
+
+<style>
+   
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+
+        .item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            color: #ff6600;
+        }
+
+    .image-size {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .edit-post {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .highlight {
+        color: #ddd;
+    }
+</style>

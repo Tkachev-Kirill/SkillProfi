@@ -1,0 +1,12 @@
+C:\SkillBoxHomeWork\SkillProfiClasses\bin\Debug\net6.0\SkillProfiClasses.deps.json
+C:\SkillBoxHomeWork\SkillProfiClasses\bin\Debug\net6.0\SkillProfiClasses.dll
+C:\SkillBoxHomeWork\SkillProfiClasses\bin\Debug\net6.0\SkillProfiClasses.pdb
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.csproj.AssemblyReference.cache
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.AssemblyInfoInputs.cache
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.AssemblyInfo.cs
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.csproj.CoreCompileInputs.cache
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.dll
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\refint\SkillProfiClasses.dll
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\SkillProfiClasses.pdb
+C:\SkillBoxHomeWork\SkillProfiClasses\obj\Debug\net6.0\ref\SkillProfiClasses.dll

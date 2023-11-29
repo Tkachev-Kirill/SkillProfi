@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZkU1Hz4AhwLnLcgQp6hv7sQmC5d8W2Gr6l2QvsCSgV87jeYXeadn3B67AGuS3v2nSVpznOF9Dv/plswVhxpnyQ==",
+  "success": true,
+  "projectFilePath": "/Users/black__ssss/Skillbox/SkillProfiWebSite/SkillProfiWebSite.csproj",
+  "expectedPackageFiles": [
+    "/Users/black__ssss/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

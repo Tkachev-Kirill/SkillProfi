@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SkillProfiWebSite</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SkillProfiWebSite.styles.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+@{
+    Random rnd = new Random();
+    int randomNumber = rnd.Next(1, 4); // Генерирует число от 1 до 3
+
+    string selectedView = "";
+
+    switch (randomNumber)
+    {
+        case 1:
+            selectedView = "Супер сайт";
+            break;
+        case 2:
+            selectedView = "Супер мега сайт";
+            break;
+        case 3:
+            selectedView = "Невероятный сайт";
+            break;
+    }
+}
+<body>
+    <header>
+        <a href="/Request/Home">Главная</a>
+        <a href="/Service/Home">Услуги</a>
+        <a href="/Project/Home">Проекты</a>
+        <a href="/Blog/Home">Блог</a>
+        <a href="/Contact/Home">Контакты</a>
+        <h1 class="header-link">@selectedView</h1>
+    </header>
+
+    @RenderBody()
+
+    <footer>
+        <p>@@black__ssss</p>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SkillProfiWebSite
+build_property.RootNamespace = SkillProfiWebSite
+build_property.ProjectDir = /Users/black__ssss/Skillbox/SkillProfiWebSite/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/black__ssss/Skillbox/SkillProfiWebSite
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Blog/ConcreteData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9Db25jcmV0ZURhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Blog/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Contact/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdC9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Project/ConcreteData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9Db25jcmV0ZURhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Project/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Request/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVxdWVzdC9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Service/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZS9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/black__ssss/Skillbox/SkillProfiWebSite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v62k06au3z
