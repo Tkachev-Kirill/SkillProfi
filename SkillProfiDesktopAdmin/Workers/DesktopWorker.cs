@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SkillProfiClasses.AccountData;
 using SkillProfiClasses.Interface;
 using SkillProfiClasses.Pages.BlogPage;
@@ -15,6 +16,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,19 +26,25 @@ namespace SkillProfiDesktopAdmin.Workers
 {
     internal class DesktopWorker : IDataWorker
     {
-        public async Task<bool> Autentefications(string login, string password)
+        private string Token { get; set; }
+        public DesktopWorker(string token)
         {
+            Token = token;
+        }
+        public DesktopWorker()
+        {
+        }
+        public async Task<string> Autentefications(string login, string password)
+        {
+            string token = string.Empty;
             using (HttpClient client = new HttpClient())
             {
                 var response = await client.GetAsync($"https://localhost:7276/api/Autentefications/{login}/{password}");
                 if (response.IsSuccessStatusCode)
                 {
-                    return true;
+                    token = await response.Content.ReadAsStringAsync();
                 }
-                else
-                {
-                    return false;
-                }
+                return token.Replace("\"", "");
             }
         }
 
@@ -44,6 +52,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(blog);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                var res = await client.PostAsync("https://localhost:7276/api/CreateBlog", content);
@@ -54,6 +63,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(acc);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 await client.PostAsync("https://localhost:7276/api/CreateNewAccount", content);
@@ -64,6 +74,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(request);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 await client.PostAsync("https://localhost:7276/api/CreateNewRequest", content);
@@ -74,6 +85,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(project);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 await client.PostAsync("https://localhost:7276/api/CreateProject", content);
@@ -84,6 +96,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(service);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 await client.PostAsync("https://localhost:7276/api/CreateService", content);
@@ -94,6 +107,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.DeleteAsync($"https://localhost:7276/api/DeleteBlog/{id}");
             }
         }
@@ -102,6 +116,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.DeleteAsync($"https://localhost:7276/api/DeleteProject/{id}");
             }
         }
@@ -110,6 +125,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.DeleteAsync($"https://localhost:7276/api/DeleteService/{id}");
             }
         }
@@ -118,6 +134,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.DeleteAsync($"https://localhost:7276/api/DeleteSocialNetwork/{id}");
             }
         }
@@ -195,6 +212,7 @@ namespace SkillProfiDesktopAdmin.Workers
             List<Request> data = new List<Request>();
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.GetAsync($"https://localhost:7276/api/GetDataAllRequestInDate/{dateStart.ToString("yyyy-MM-ddTHH:mm:ss.fffffffK")}/{dateFinish.ToString("yyyy-MM-ddTHH:mm:ss.fffffffK")}");
                 if (response.IsSuccessStatusCode)
                 {
@@ -243,22 +261,7 @@ namespace SkillProfiDesktopAdmin.Workers
             }
         }
 
-        public async Task<List<Account>> GetDataAllAccount()
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                var response = await client.GetAsync("https://localhost:7276/api/GetDataAllAccount");
-                if (response.IsSuccessStatusCode)
-                {
-                    var jsonString = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<List<Account>>(jsonString);
-                }
-                else
-                {
-                    return new List<Account>();
-                }
-            }
-        }
+       
 
       
 
@@ -317,6 +320,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var response = await client.GetAsync("https://localhost:7276/api/GetDataAllRequest");
                 if (response.IsSuccessStatusCode)
                 {
@@ -351,6 +355,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(blog);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateBlog", content);
@@ -361,6 +366,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(contact);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateContact", content);
@@ -371,6 +377,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(mainPage);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateMainPage", content);
@@ -381,6 +388,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(project);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateProject", content);
@@ -391,6 +399,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(service);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateService", content);
@@ -401,6 +410,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(socialNetwork);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateSocialNetwork", content);
@@ -411,6 +421,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(request);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PutAsync("https://localhost:7276/api/UpdateStatusRequest", content);
@@ -438,6 +449,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 var json = JsonConvert.SerializeObject(network);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var res = await client.PostAsync("https://localhost:7276/api/CreateNetwork", content);
@@ -463,6 +475,7 @@ namespace SkillProfiDesktopAdmin.Workers
         {
             using (HttpClient client = new HttpClient())
             {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 using (var content = new MultipartFormDataContent())
                 {
                     var fileContent = new ByteArrayContent(System.IO.File.ReadAllBytes(nameFile));

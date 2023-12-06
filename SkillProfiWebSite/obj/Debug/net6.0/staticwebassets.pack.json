@@ -5,12 +5,12 @@
       "PackagePath": "staticwebassets\\SkillProfiWebSite.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\115a6f67-7580-4ce3-bed8-2c15f2e2927d.jpeg",
-      "PackagePath": "staticwebassets\\Images\\115a6f67-7580-4ce3-bed8-2c15f2e2927d.jpeg"
-    },
-    {
       "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\29412dab-34a3-4c7c-bcba-c90e3e31dc2c.jpeg",
       "PackagePath": "staticwebassets\\Images\\29412dab-34a3-4c7c-bcba-c90e3e31dc2c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\2a295952-7c13-43cf-954b-e73143e8277d.jpeg",
+      "PackagePath": "staticwebassets\\Images\\2a295952-7c13-43cf-954b-e73143e8277d.jpeg"
     },
     {
       "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\2c747fc7-f231-4b72-bc1f-96aedf15daa4.jpeg",
@@ -27,6 +27,14 @@
     {
       "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\9ba58895-5b8a-450d-a05a-404f2b8e4d22.jpeg",
       "PackagePath": "staticwebassets\\Images\\9ba58895-5b8a-450d-a05a-404f2b8e4d22.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\afe59d67-27c3-4ff8-9c72-d966f826f1fa.jpeg",
+      "PackagePath": "staticwebassets\\Images\\afe59d67-27c3-4ff8-9c72-d966f826f1fa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\d70fe801-eec4-47b8-8386-99d26cfcf106.jpeg",
+      "PackagePath": "staticwebassets\\Images\\d70fe801-eec4-47b8-8386-99d26cfcf106.jpeg"
     },
     {
       "Id": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\css\\site.css",

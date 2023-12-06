@@ -33,10 +33,10 @@ namespace SkillProfiDesktopAdmin
             var Worker = new DesktopWorker();
             var log = Login.Text;
             var pass = Password.Password;
-            bool success = await Worker.Autentefications(log, pass);
-            if (success)
+            var token = await Worker.Autentefications(log, pass);
+            if (!string.IsNullOrEmpty(token))
             {
-                var adminWindow = new AdminWindow(log);
+                var adminWindow = new AdminWindow(log, token);
                 this.Hide();
                 adminWindow.Show();
             }

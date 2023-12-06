@@ -198,19 +198,19 @@ namespace SkillProfiWebApi.DataWorkers
         }
 
 
-        public async Task<bool> Autentefications(string login, string password)
+        public async Task<string> Autentefications(string login, string password)
         {
             var reader = new Reader(PathDb);
             var needData = await reader.GetConcreteAccount(login);
             if (needData is null)
             {
-                return false;
+                return string.Empty;
             }
             if (needData.Password != password)
             {
-                return false;
+                return string.Empty;
             }
-            return true;
+            return "true";
         }
 
         public async Task<List<Account>> GetDataAllAccount()

@@ -15,7 +15,7 @@ namespace SkillProfiClasses.Interface
 {
     public interface IDataWorker
     {
-        public Task<bool> Autentefications(string login, string password);
+        public Task<string> Autentefications(string login, string password);
 
         public Task<MainPage> GetMainPage();
         public Task<string> GetImage(string nameFile);
@@ -28,7 +28,7 @@ namespace SkillProfiClasses.Interface
         public Task<ServicePage> GetConcreteService(string id);
         public Task<List<Request>> GetDataAllRequest();
         public Task<List<Request>> GetDataAllRequestInDate(DateTime dateStart, DateTime dateFinish);
-        public Task<List<Account>> GetDataAllAccount();
+        
         public Task<Account> GetConcreteAccount(string id);
         public Task<List<SocialNetwork>> GetDataSocialNetwork();
         public Task<SocialNetwork> GetConcreteSocialNetwork(string id);

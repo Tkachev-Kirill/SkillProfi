@@ -134,3 +134,4 @@ C:\Users\black__ssss\Desktop\SkillProfi\SkillProfiWebApi\obj\Debug\net6.0\refint
 C:\Users\black__ssss\Desktop\SkillProfi\SkillProfiWebApi\obj\Debug\net6.0\SkillProfiWebApi.pdb
 C:\Users\black__ssss\Desktop\SkillProfi\SkillProfiWebApi\obj\Debug\net6.0\SkillProfiWebApi.genruntimeconfig.cache
 C:\Users\black__ssss\Desktop\SkillProfi\SkillProfiWebApi\obj\Debug\net6.0\ref\SkillProfiWebApi.dll
+C:\Users\black__ssss\Desktop\SkillProfi\SkillProfiWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

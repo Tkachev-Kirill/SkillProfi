@@ -40,9 +40,9 @@ namespace SkillProfiDesktopAdmin
         private Contact ContactMenu = new Contact();
         bool NowWindowIsContact = false;
 
-        public AdminWindow(string login)
+        public AdminWindow(string login, string token)
         {
-            Worker = new DesktopWorker();
+            Worker = new DesktopWorker(token);
             InitializeComponent();
             AddLoginInHeader(login);
         }

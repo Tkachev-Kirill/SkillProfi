@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LoYQjlMlm2l7jpQvdT9x3rmO7OH++M9D+0LVrGNjb8Y=",
+  "Hash": "DfO8fRYVPE7ZFjR11dz8lGsD4e/UFux8XvmX3giWLWU=",
   "Source": "SkillProfiWebSite",
   "BasePath": "_content/SkillProfiWebSite",
   "Mode": "Default",
@@ -85,23 +85,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\115a6f67-7580-4ce3-bed8-2c15f2e2927d.jpeg",
-      "SourceId": "SkillProfiWebSite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\",
-      "BasePath": "_content/SkillProfiWebSite",
-      "RelativePath": "Images/115a6f67-7580-4ce3-bed8-2c15f2e2927d.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\115a6f67-7580-4ce3-bed8-2c15f2e2927d.jpeg"
-    },
-    {
       "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\29412dab-34a3-4c7c-bcba-c90e3e31dc2c.jpeg",
       "SourceId": "SkillProfiWebSite",
       "SourceType": "Discovered",
@@ -117,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\29412dab-34a3-4c7c-bcba-c90e3e31dc2c.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\2a295952-7c13-43cf-954b-e73143e8277d.jpeg",
+      "SourceId": "SkillProfiWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\",
+      "BasePath": "_content/SkillProfiWebSite",
+      "RelativePath": "Images/2a295952-7c13-43cf-954b-e73143e8277d.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\2a295952-7c13-43cf-954b-e73143e8277d.jpeg"
     },
     {
       "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\2c747fc7-f231-4b72-bc1f-96aedf15daa4.jpeg",
@@ -185,6 +185,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\9ba58895-5b8a-450d-a05a-404f2b8e4d22.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\afe59d67-27c3-4ff8-9c72-d966f826f1fa.jpeg",
+      "SourceId": "SkillProfiWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\",
+      "BasePath": "_content/SkillProfiWebSite",
+      "RelativePath": "Images/afe59d67-27c3-4ff8-9c72-d966f826f1fa.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\afe59d67-27c3-4ff8-9c72-d966f826f1fa.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\Images\\d70fe801-eec4-47b8-8386-99d26cfcf106.jpeg",
+      "SourceId": "SkillProfiWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\",
+      "BasePath": "_content/SkillProfiWebSite",
+      "RelativePath": "Images/d70fe801-eec4-47b8-8386-99d26cfcf106.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\d70fe801-eec4-47b8-8386-99d26cfcf106.jpeg"
     },
     {
       "Identity": "C:\\Users\\black__ssss\\Desktop\\SkillProfi\\SkillProfiWebSite\\wwwroot\\js\\site.js",
